@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Ultras FC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav scrolled" id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-badge">U</div>
+    <div>
+      <div class="nav-logo-text">ULTRAS FC</div>
+      <div class="nav-logo-sub">Est. 1998</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html" class="active">About Us</a></li>
+    <li><a href="shop.html" class="nav-cta">Join Now</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── About Hero ── -->
+<div class="page-header" style="min-height: 55vh; display:flex; align-items: flex-end; padding-bottom: 80px;">
+  <div>
+    <div class="section-label reveal">Our Story</div>
+    <h1 class="section-title reveal reveal-delay-1" style="font-size: clamp(3.5rem, 9vw, 8rem);">BORN IN<br /><span>THE STANDS</span></h1>
+  </div>
+  <!-- Decorative large text -->
+  <div style="position:absolute;right:5vw;bottom:40px;font-family:var(--font-display);font-size:clamp(6rem,18vw,16rem);color:rgba(201,168,76,0.05);line-height:1;pointer-events:none;user-select:none;">1998</div>
+</div>
+
+<!-- ── Manifesto ── -->
+<section class="section" style="background: var(--black-soft);">
+  <div class="about-manifesto reveal">
+    <p class="manifesto-text">
+      We were never just fans. We were the ones who stayed until the final whistle,
+      who <span>drove four hours</span> in the rain for a Tuesday night fixture,
+      who sang until our voices gave out and then sang some more.
+      Ultras FC was built for <span>the truly faithful</span>.
+    </p>
+  </div>
+</section>
+
+<!-- ── Stats Row ── -->
+<div class="stats-row">
+  <div class="stat-block reveal">
+    <div class="stat-val" id="statMembers">0</div>
+    <div class="stat-lbl">Members Worldwide</div>
+  </div>
+  <div class="stat-block reveal reveal-delay-1">
+    <div class="stat-val" id="statYears">0</div>
+    <div class="stat-lbl">Years Established</div>
+  </div>
+  <div class="stat-block reveal reveal-delay-2">
+    <div class="stat-val" id="statMatches">0</div>
+    <div class="stat-lbl">Away Days Organised</div>
+  </div>
+  <div class="stat-block reveal reveal-delay-3">
+    <div class="stat-val" id="statCountries">0</div>
+    <div class="stat-lbl">Countries Represented</div>
+  </div>
+</div>
+
+<!-- ── Values ── -->
+<section class="section" style="background: var(--black);">
+  <div class="section-label reveal">What We Stand For</div>
+  <h2 class="section-title reveal reveal-delay-1">OUR<br /><span>VALUES</span></h2>
+
+  <div class="values-grid" style="margin-top: 60px;">
+    <div class="value-card reveal">
+      <div class="value-number">01</div>
+      <div class="value-title">Loyalty</div>
+      <p class="value-text">Through promotion and relegation, glory and heartbreak — we never leave. The badge means everything to us.</p>
+    </div>
+    <div class="value-card reveal reveal-delay-1">
+      <div class="value-number">02</div>
+      <div class="value-title">Passion</div>
+      <p class="value-text">We don't just watch — we live it. Every tackle, every corner, every goal is felt in our bones.</p>
+    </div>
+    <div class="value-card reveal reveal-delay-2">
+      <div class="value-number">03</div>
+      <div class="value-title">Community</div>
+      <p class="value-text">Tens of thousands of strangers united by one shirt. We look out for each other, in the stadium and beyond.</p>
+    </div>
+    <div class="value-card reveal reveal-delay-3">
+      <div class="value-number">04</div>
+      <div class="value-title">Tradition</div>
+      <p class="value-text">We carry the chants, the rituals, the stories. Football is history — and we are its keepers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Timeline ── -->
+<section class="section" style="background: var(--black-soft);">
+  <div class="section-label reveal">Our Journey</div>
+  <h2 class="section-title reveal reveal-delay-1">THE<br /><span>TIMELINE</span></h2>
+
+  <div style="margin-top: 60px; position: relative; max-width: 700px;">
+    <div style="position:absolute;left:16px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom, var(--gold-dim), transparent);"></div>
+    <div id="timeline"></div>
+  </div>
+</section>
+
+<!-- ── Leadership ── -->
+<section class="team-section">
+  <div style="max-width: 100%;">
+    <div class="section-label reveal">The Team</div>
+    <h2 class="section-title reveal reveal-delay-1">CLUB<br /><span>LEADERSHIP</span></h2>
+
+    <div class="leadership-grid">
+      <div class="leader-card reveal">
+        <div class="leader-img-wrap">
+          <img class="leader-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Chairman" />
+        </div>
+        <div class="leader-role">Chairman</div>
+        <div class="leader-name">David Okafor</div>
+      </div>
+      <div class="leader-card reveal reveal-delay-1">
+        <div class="leader-img-wrap">
+          <img class="leader-img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Secretary" />
+        </div>
+        <div class="leader-role">Club Secretary</div>
+        <div class="leader-name">Sarah Mercer</div>
+      </div>
+      <div class="leader-card reveal reveal-delay-2">
+        <div class="leader-img-wrap">
+          <img class="leader-img" src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=400&q=80" alt="Events" />
+        </div>
+        <div class="leader-role">Head of Events</div>
+        <div class="leader-name">Raj Patel</div>
+      </div>
+      <div class="leader-card reveal reveal-delay-3">
+        <div class="leader-img-wrap">
+          <img class="leader-img" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80" alt="Digital" />
+        </div>
+        <div class="leader-role">Digital Lead</div>
+        <div class="leader-name">Emma Clarke</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Newsletter ── -->
+<section class="newsletter section">
+  <div class="newsletter-inner">
+    <div class="newsletter-icon">🏆</div>
+    <div class="section-label reveal" style="justify-content: center;">Be Part of It</div>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align: center;">JOIN THE<br /><span>FAITHFUL</span></h2>
+    <p class="reveal reveal-delay-2" style="text-align:center; color: var(--white-dim); font-style: italic; margin-top: 16px;">
+      27 years of passion. Thousands of members. One club. Your seat is waiting.
+    </p>
+    <form class="newsletter-form reveal reveal-delay-3" onsubmit="handleSubscribe(event)">
+      <input class="newsletter-input" type="email" placeholder="Enter your email address" required />
+      <button type="submit" class="newsletter-submit">Join Us</button>
+    </form>
+    <p class="newsletter-note reveal reveal-delay-4">It's free to join. Always will be.</p>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">ULTRAS FC</div>
+      <p class="footer-brand-desc">
+        Born in the stands. Raised on passion. The official fan club for those who bleed gold and black.
+      </p>
+      <div class="footer-social">
+        <a href="#" class="social-link">𝕏</a>
+        <a href="#" class="social-link">ig</a>
+        <a href="#" class="social-link">fb</a>
+        <a href="#" class="social-link">yt</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Membership</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Club</div>
+      <ul class="footer-links">
+        <li><a href="#">Match Centre</a></li>
+        <li><a href="#">The Squad</a></li>
+        <li><a href="#">Away Days</a></li>
+        <li><a href="#">Fan Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Ultras FC · All rights reserved</span>
+    <span class="footer-copy">Designed with ❤️ for the faithful</span>
+  </div>
+</footer>
+
+<script>
+  /* ── Sticky nav ── */
+  const nav = document.getElementById('nav');
+  nav.classList.add('scrolled');
+
+  /* ── Scroll reveal ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        if (e.target.closest('.stats-row')) startCounters();
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  /* ── Counters ── */
+  let counted = false;
+  function startCounters() {
+    if (counted) return; counted = true;
+    const counters = [
+      { el: 'statMembers', target: 12400, suffix: '' },
+      { el: 'statYears', target: 27, suffix: '' },
+      { el: 'statMatches', target: 340, suffix: '' },
+      { el: 'statCountries', target: 42, suffix: '' },
+    ];
+    counters.forEach(({ el, target, suffix }) => {
+      const elem = document.getElementById(el);
+      let start = 0;
+      const step = target / 60;
+      const timer = setInterval(() => {
+        start = Math.min(start + step, target);
+        elem.textContent = Math.round(start).toLocaleString() + suffix;
+        if (start >= target) clearInterval(timer);
+      }, 25);
+    });
+  }
+
+  /* ── Timeline ── */
+  const events = [
+    { year: '1998', text: 'Ultras FC founded by a group of 12 friends outside the stadium gates.' },
+    { year: '2003', text: 'Membership hits 500. First official away day trip to the European leagues.' },
+    { year: '2010', text: 'Launched the club shop. Over 2,000 scarves sold in the first week.' },
+    { year: '2016', text: 'Reached 5,000 members. Organized the historic end-of-season celebration march.' },
+    { year: '2021', text: 'Fan Community of the Year award. Global membership passes 10,000.' },
+    { year: '2025', text: 'New chapter: digital membership, global watch parties, and this website.' },
+  ];
+  const tl = document.getElementById('timeline');
+  events.forEach((ev, i) => {
+    const div = document.createElement('div');
+    div.className = 'reveal' + (i % 2 === 0 ? '' : ' reveal-delay-1');
+    div.style.cssText = 'display:flex;gap:32px;margin-bottom:48px;padding-left:48px;';
+    div.innerHTML = `
+      <div style="position:absolute;left:8px;width:16px;height:16px;border-radius:50%;background:var(--gold);border:2px solid var(--black);margin-top:4px;"></div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);letter-spacing:2px;margin-bottom:6px;">${ev.year}</div>
+        <div style="font-style:italic;color:var(--white-dim);font-size:0.95rem;line-height:1.7;">${ev.text}</div>
+      </div>
+    `;
+    tl.appendChild(div);
+    observer.observe(div);
+  });
+
+  /* ── Newsletter ── */
+  function handleSubscribe(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type=submit]');
+    btn.textContent = '✓ Welcome!';
+    btn.style.background = '#2ED573';
+    setTimeout(() => { btn.textContent = 'Join Us'; btn.style.background = ''; e.target.reset(); }, 3000);
+  }
+
+  /* ── Mobile nav ── */
+  const toggle = document.getElementById('navToggle');
+  const links = document.querySelector('.nav-links');
+  let mobileOpen = false;
+  toggle.addEventListener('click', () => {
+    mobileOpen = !mobileOpen;
+    links.style.cssText = mobileOpen
+      ? 'display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:rgba(8,8,8,0.98);padding:24px 5vw;gap:20px;border-bottom:1px solid rgba(201,168,76,0.2);'
+      : '';
+  });
+</script>
+</body>
+</html>
