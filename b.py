@@ -1,9 +1,9 @@
 # Matrix Multiplication
 A = [[1, 2],
-     [3, 4]]
+     [2, 4]]
 
 B = [[9, 8],
-     [7, 6]]
+     [8, 8]]
 
 # Result matrix initialization
 result = [[0, 0],
