@@ -15,7 +15,7 @@ public class Work {
         } catch (Exception e) {
             System.out.println("Error: Invalid input. Please enter a valid integer.");
         } finally {
-            System.out.println("Good");
+            System.out.println("Good Boy");
         }
         scanner.close();
     }
