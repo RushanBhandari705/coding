@@ -1,8 +1,27 @@
-#Write a function that takes a number N as parameters and returns the sum of all the even numbers from 1 to N.
+import string
+def is_strong(password):
+    if len(password) < 8:
+        return False
+    
+    has_number = any(char.isdigit() for char in password)
+    has_special = any(char in string.punctuation for char in password)
+    
+    return has_number and has_special
+passwords = []
 
-def sum_of_even_numbers(N):
-    sum = 0
-    for i in range(1, N+1):
-        if i % 2 == 0:
-            sum += i
-    return sum
+n = int(input("How many passwords do you want to check? "))
+
+for i in range(n):
+    pwd = input(f"Enter password {i+1}: ")
+    passwords.append(pwd)
+with open("strong.txt", "w") as strong_file, open("weak.txt", "w") as weak_file:
+    
+    for pwd in passwords:
+        if is_strong(pwd):
+            strong_file.write(pwd + "\n")
+        else:
+            weak_file.write(pwd + "\n")
+
+print("\nPasswords have been saved:")
+print("- Strong passwords → strong.txt")
+print("- Weak passwords → weak.txt")
