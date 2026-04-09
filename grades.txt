@@ -1,0 +1,6 @@
+Rushan,85
+Alson,90
+Huba,78
+Sudip,92
+
+Average Grade: 86.25
